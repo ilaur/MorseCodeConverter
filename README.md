@@ -11,3 +11,18 @@ The application covers the International Morse Code.
 - The input will be sanitized to contain only letters A-Z, a-z and numbers 0-9 (is alphanumeric).
 - The application should close when the special command `/exit` is received.
 - The output should appear as a squence of `.` and `-`.
+
+## Run the script
+
+```
+python main.py
+```
+
+## To run the Jupyter Notebook
+
+```
+pip3 install -r requirements.txt
+jupyter notebook
+```
+
+Select the `Documentation.ipynb` notebook from the browser.
