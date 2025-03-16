@@ -5,11 +5,12 @@ SPACE_LETTER = 3 * " "
 SPACE_WORD = 7 * " "
 
 class MorseCode:
+    """Single class that encodes a text message into morse code"""
     
     
     def __init__(self) -> None:
         """Initialize the morse code table"""
-        self._letter_table = {
+        self.letter_table = {
             "A": f"{DOT}{SPACE_PART}{DASH}{SPACE_LETTER}",
             "B": f"{DASH}{SPACE_PART}{DOT}{SPACE_PART}{DOT}{SPACE_PART}{DOT}{SPACE_LETTER}",
             "C": f"{DASH}{SPACE_PART}{DOT}{SPACE_PART}{DASH}{SPACE_PART}{DOT}{SPACE_LETTER}",
@@ -56,7 +57,7 @@ class MorseCode:
         for word in text_message.split(" "):
             if word.isalnum():
                 for letter in word:
-                    encoded_message.append(self._letter_table[letter])
+                    encoded_message.append(self.letter_table[letter])
                 # Remove final letter end space
                 encoded_message[-1] = encoded_message[-1].rstrip()
                 encoded_message.append(SPACE_WORD)

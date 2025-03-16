@@ -4,6 +4,7 @@ from morse_code import MorseCode
 MAX_LENGTH = 512
 
 def main() -> None:
+    """Main entry point of the program"""
     text_message = input("Input message (type '/exit' to close): ")
     morse_code = MorseCode()
 
