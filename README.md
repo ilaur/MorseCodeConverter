@@ -15,14 +15,6 @@ The application covers the International Morse Code.
 ## Run the script
 
 ```
+cd ./src
 python main.py
 ```
-
-## To run the Jupyter Notebook
-
-```
-pip3 install -r requirements.txt
-jupyter notebook
-```
-
-Select the `Documentation.ipynb` notebook from the browser.
