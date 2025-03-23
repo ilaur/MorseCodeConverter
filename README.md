@@ -1,4 +1,4 @@
-# Objective: Morse Code
+# Morse Code Converter
 
 Make a script that coverts a given input String into Morse Code.
 Morse Code from a String input is a text encoding.
